@@ -1,52 +1,37 @@
-"use client";
+import ProjectCard from "./ProjectCard";
 
 const ProjectsSection = () => {
 	return (
-		<div className='py-10 px-6 text-white'>
-			<h2 className='text-3xl font-bold text-center mb-6'>Projects</h2>
+		<div className='container mx-auto px-6 py-20 relative'>
+			{/* Title */}
+			<div className=' text-center mb-10 mt-15'>
+				<h1 className='text-3xl md:text-7xl font-bold uppercase text-amber-50'>
+					Recent
+				</h1>
+				<h2 className='text-3xl md:text-7xl font-bold uppercase text-stone-700'>
+					Projects
+				</h2>
+			</div>
 
-			<div className='space-y-6'>
-				<div>
-					<h3 className='text-xl font-semibold'>Zwigato</h3>
-					<p>🍽️ Online food ordering app using React.js, TypeScript, and Node.js.</p>
-					<p>
-						🔗{" "}
-						<a
-							href='https://zwigato-frontend.onrender.com/'
-							target='_blank'
-							className='text-blue-400'>
-							Live Demo
-						</a>
-					</p>
-				</div>
-
-				<div>
-					<h3 className='text-xl font-semibold'>SCRS Website</h3>
-					<p>🚀 Website for junior core members using React.js and Sass.</p>
-					<p>
-						🔗{" "}
-						<a
-							href='https://scrs-vit.vercel.app/'
-							target='_blank'
-							className='text-blue-400'>
-							Live Demo
-						</a>
-					</p>
-				</div>
-
-				<div>
-					<h3 className='text-xl font-semibold'>Certificate Generator</h3>
-					<p>📜 A tool to generate certificates using React.js and Tailwind.</p>
-					<p>
-						🔗{" "}
-						<a
-							href='https://certificate-gen-lilac.vercel.app/'
-							target='_blank'
-							className='text-blue-400'>
-							Live Demo
-						</a>
-					</p>
-				</div>
+			<div className='grid grid-cols-1 gap-10'>
+				<ProjectCard
+					title='CVGenie'
+					description='📜 A AI saas application using Next.js and Langchain, OpenAI, Gemini.'
+					imageUrl='/images/cvgenie.png'
+					demoUrl='https://aicvgenie.vercel.app/'
+				/>
+				<ProjectCard
+					title='Zwigato'
+					description='🍽️ Online food ordering app using React.js, TypeScript, and Node.js.'
+					imageUrl='/images/zwigato.png'
+					demoUrl='https://zwigato-frontend.onrender.com/'
+				/>
+				<ProjectCard
+					title='SCRS Website'
+					description='🚀 Website for junior core members using React.js and Sass.'
+					imageUrl='/images/scrsWeb.png'
+					demoUrl='https://scrs-vit.vercel.app/'
+				/>
 			</div>
 		</div>
 	);

@@ -48,7 +48,7 @@ const ExperienceSection = () => {
 			ref={sectionRef}
 			className='relative w-full min-h-screen bg-black text-white overflow-hidden '>
 			{/* Title */}
-			<div className=' text-center mb-10 mt-15'>
+			<div className=' text-center mb-20 mt-15'>
 				<h1 className='text-3xl md:text-7xl font-bold uppercase text-amber-50'>
 					Recent
 				</h1>
