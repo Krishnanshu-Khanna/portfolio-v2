@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Bg from "E://portfolio-v2/public/images/bg.png";
 import Image from "next/image";
 
 interface CardProps {
@@ -39,7 +38,7 @@ const Card: React.FC<CardProps> = ({
 			onMouseLeave={() => setShowDesc(false)}>
 			<div className='inset-0 absolute z-0'>
 				<Image
-					src={Bg}
+					src="/images/bg.png"
 					alt='background'
 					className='w-full h-full object-cover opacity-10'
 					fill={true}
