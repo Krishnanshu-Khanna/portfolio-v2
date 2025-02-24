@@ -77,11 +77,27 @@ export const ProfileCard = () => {
 					className='text-orange-400 hover:text-[#FF6B00] transition overflow-y-hidden'>
 					<Github size={24} />
 				</a> */}
-				<HoverLabelIcon icon={<Github size={24} color="orange" />} label='GitHub' href='https://github.com/Krishnanshu-Khanna' />
-				<HoverLabelIcon icon={<Linkedin size={24} color="orange" />} label='LinkedIn' href='https://www.linkedin.com/in/krishnanshu-khanna/' />
-				<HoverLabelIcon icon={<Mail size={24} color="orange" />} label='Email' href='mailto:krishnanshu.khanna@gmail.com' />
-				<HoverLabelIcon icon={<FileText size={24} color="orange" />} label='Resume' href='https://drive.google.com/file/d/1xFGvttmHhaCJgnjfDqqv17runq8poL28/view?usp=drive_link' />
-				
+				<HoverLabelIcon
+					icon={<Github size={24} color='#FF6B00' />}
+					label='GitHub'
+					href='https://github.com/Krishnanshu-Khanna'
+				/>
+				<HoverLabelIcon
+					icon={<Linkedin size={24} color='#FF6B00' />}
+					label='LinkedIn'
+					href='https://www.linkedin.com/in/krishnanshu-khanna/'
+				/>
+				<HoverLabelIcon
+					icon={<Mail size={24} color='#FF6B00' />}
+					label='Email'
+					href='mailto:krishnanshu.khanna@gmail.com'
+				/>
+				<HoverLabelIcon
+					icon={<FileText size={24} color='#FF6B00' />}
+					label='Resume'
+					href='https://drive.google.com/file/d/1xFGvttmHhaCJgnjfDqqv17runq8poL28/view?usp=drive_link'
+				/>
+
 				{/* <a
 					href='https://www.linkedin.com/in/krishnanshu-khanna/'
 					className='text-orange-400 hover:text-[#FF6B00] transition overflow-y-hidden'>

@@ -7,12 +7,24 @@ const Navbar = () => {
 			{/* <Link href='/'>
 				<Home size={24} />
 			</Link> */}
-			<HoverLabelIcon icon={<Home size={24} />} label='Home' href='/' />
-			<HoverLabelIcon icon={<Briefcase size={24} />} label='Projects' href='/projects' />
-			<HoverLabelIcon icon={<Folder size={24} />} label='Blog' href='/blog' />
-			<HoverLabelIcon icon={<Wrench size={24} />} label='Services' href='/services' />
-			<HoverLabelIcon icon={<SquarePen size={24} />} label='Contact' href='/contact' />
-			
+			<HoverLabelIcon icon={<Home size={24} />} label='Home' href='#' />
+			<HoverLabelIcon
+				icon={<Briefcase size={24} />}
+				label='Experiences'
+				href='#experiences'
+			/>
+			<HoverLabelIcon icon={<Folder size={24} />} label='Projects' href='#projects' />
+			<HoverLabelIcon
+				icon={<Wrench size={24} />}
+				label='Skills'
+				href='#skills'
+			/>
+			<HoverLabelIcon
+				icon={<SquarePen size={24} />}
+				label='Contact'
+				href='#contact'
+			/>
+
 			{/* <Link href=''>
 				<Folder size={24} />
 			</Link>

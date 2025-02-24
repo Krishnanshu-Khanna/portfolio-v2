@@ -41,7 +41,7 @@ const Loader = ({ onComplete }: { onComplete: () => void }) => {
 
 	return (
 		<div className='loader fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black z-50'>
-			<div className='header flex space-x-4'>
+			<div className='header font-[oswald] uppercase flex space-x-4'>
 				<div className='letters left flex space-x-2'>
 					<div className='letter text-white'>k</div>
 					<div className='letter text-white'>r</div>

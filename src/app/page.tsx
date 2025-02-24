@@ -1,7 +1,11 @@
 "use client";
+import ContactSection from "@/components/ContactSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import HomeSection from "@/components/HomeSection";
 import Loader from "@/components/Loader";
 import Navbar from "@/components/Navbar";
+import ProjectSection from "@/components/ProjectSection";
+import SkillsSection from "@/components/SkillsSection";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -41,8 +45,29 @@ const Page = () => {
 	return (
 		<div className='w-full bg-black text-black flex flex-col gap-2'>
 			<Navbar />
-			<section className="">
+			{/* Home Section */}
+			<section id='home' className='min-h-screen'>
 				<HomeSection />
+			</section>
+
+			{/* Experience Section (Education & Internships) */}
+			<section id='experiences' className='min-h-screen'>
+				<ExperienceSection />
+			</section>
+
+			{/* Projects Section */}
+			<section id='projects' className='min-h-screen'>
+				<ProjectSection />
+			</section>
+
+			{/* Skills Section */}
+			<section id='skills' className='min-h-screen'>
+				<SkillsSection />
+			</section>
+
+			{/* Contact Section */}
+			<section id='contact' className='min-h-screen'>
+				<ContactSection />
 			</section>
 		</div>
 	);
