@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import {
 	Poppins,
@@ -59,6 +60,19 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
+			<head>
+				<Script
+					async
+					src='https://www.googletagmanager.com/gtag/js?id=G-5LMZFV6YTK'></Script>
+				<Script id='google-analytics'>
+					{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5LMZFV6YTK');`}
+				</Script>
+			</head>
 			<body
 				className={`${poppins.variable} ${nunitoSans.variable} ${montserrat.variable} ${bebasNeue.variable} ${oswald.variable} ${playfair.variable}`}>
 				{children}
