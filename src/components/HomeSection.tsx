@@ -1,15 +1,51 @@
+import { useRef, useEffect } from "react";
 import { ProfileCard } from "./ProfileCard";
+import gsap from "gsap";
 
 export default function HomeSection() {
+	const sectionRef = useRef(null);
+
+	useEffect(() => {
+		const ctx = gsap.context(() => {
+			gsap.from(".profile-card", {
+				y: 100,
+				opacity: 0,
+				duration: 1,
+				ease: "power3.out",
+			});
+
+			gsap.from(".text-content > *", {
+				y: 50,
+				opacity: 0,
+				duration: 0.8,
+				stagger: 0.2,
+				ease: "power3.out",
+			});
+
+			gsap.from(".stats > div", {
+				y: 30,
+				opacity: 0,
+				duration: 0.6,
+				stagger: 0.15,
+				ease: "power3.out",
+				delay: 0.5,
+			});
+		}, sectionRef);
+
+		return () => ctx.revert();
+	}, []);
+
 	return (
-		<section className='flex flex-col  font-[poppins] lg:flex-row items-center justify-center lg:justify-between  px-10 md:px-24 py-20 space-y-12 md:space-y-0'>
+		<section
+			ref={sectionRef}
+			className='flex flex-col font-[poppins] lg:flex-row items-center justify-center lg:justify-between px-10 md:px-24 py-20 space-y-12 md:space-y-0'>
 			{/* Profile Card */}
-			<div className='overflow-y-hidden flex justify-center items-center '>
+			<div className='overflow-y-hidden flex justify-center items-center profile-card'>
 				<ProfileCard />
 			</div>
 
 			{/* Text Content */}
-			<div className='text-center md:text-left overflow-y-hidden  font-poppins font-semibold w-full lg:w-1/2 space-y-10'>
+			<div className='text-content text-center md:text-left overflow-y-hidden font-poppins font-semibold w-full lg:w-1/2 space-y-10'>
 				<div className='space-y-0 md:space-y-8 mb-8'>
 					<h1 className='text-3xl md:text-7xl font-bold overflow-y-hidden text-amber-50'>
 						SOFTWARE
@@ -18,7 +54,7 @@ export default function HomeSection() {
 						ENGINEER
 					</h2>
 				</div>
-				<div className='flex justify-center  md:block'>
+				<div className='flex justify-center md:block'>
 					<p className='text-[14px] md:text-base w-3/4 text-stone-500 leading-relaxed text-center md:text-left'>
 						I am a CSE student with experience in building web applications and
 						websites. I have worked with various technologies and frameworks like
@@ -27,18 +63,20 @@ export default function HomeSection() {
 				</div>
 
 				{/* Stats */}
-				<div className='flex flex-col gap-8 md:flex-row justify-center md:justify-start space-y-6 md:space-x-12 md:space-y-0'>
-					<div className='text-center  md:text-left p-3'>
+				<div className='stats flex flex-col gap-8 md:flex-row justify-center md:justify-start space-y-6 md:space-x-12 md:space-y-0'>
+					<div className='text-center md:text-left p-3'>
 						<h1 className='text-white text-2xl md:text-5xl overflow-y-hidden font-bold'>
-							+3
+							+2
 						</h1>
 						<p className='text-stone-600 text-[12px] md:text-sm'>YEARS OF BUILDING</p>
 					</div>
 					<div className='text-center md:text-left p-3'>
 						<h1 className='text-white text-2xl md:text-5xl overflow-y-hidden font-bold'>
-							+20
+							+10
 						</h1>
-						<p className='text-stone-600 text-[12px] md:text-sm'>PROJECTS COMPLETED</p>
+						<p className='text-stone-600 text-[12px] md:text-sm'>
+							PROJECTS COMPLETED
+						</p>
 					</div>
 				</div>
 			</div>

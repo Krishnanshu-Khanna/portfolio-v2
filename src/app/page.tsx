@@ -66,7 +66,7 @@ const Page = () => {
 			</section>
 
 			{/* Contact Section */}
-			<section id='contact' className='min-h-screen'>
+			<section id='contact' className='min-h-screen flex flex-col justify-end'>
 				<ContactSection />
 			</section>
 		</div>
