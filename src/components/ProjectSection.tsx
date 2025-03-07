@@ -52,11 +52,11 @@ const ProjectsSection = () => {
 
 			<div className='grid grid-cols-1 gap-10' ref={projectsRef}>
 				<ProjectCard
-					title='CVGenie'
+					title='CVHelper'
 					className='project-item'
 					description='📜 A AI saas application using Next.js and Langchain, OpenAI, Gemini.'
 					imageUrl='/images/cvgenie.png'
-					demoUrl='https://aicvgenie.vercel.app/'
+					demoUrl='https://cvhelper.in/'
 				/>
 				<ProjectCard
 					title='Zwigato'
