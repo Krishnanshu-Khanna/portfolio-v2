@@ -1,6 +1,7 @@
 import { FileText, Flame, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import HoverLabelIcon from "./HoverLabel";
+import { FaMediumM } from "react-icons/fa";
 
 export const ProfileCard = () => {
 	return (
@@ -96,6 +97,11 @@ export const ProfileCard = () => {
 					icon={<FileText size={24} color='#FF6B00' />}
 					label='Resume'
 					href='https://drive.google.com/file/d/1xFGvttmHhaCJgnjfDqqv17runq8poL28/view?usp=drive_link'
+				/>
+				<HoverLabelIcon
+					icon={<FaMediumM size={24} color='#FF6B00' />}
+					label='Medium'
+					href='https://medium.com/@krishnanshu.khanna'
 				/>
 
 				{/* <a
