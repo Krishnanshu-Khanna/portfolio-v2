@@ -9,7 +9,6 @@ import {
 	Oswald,
 	Playfair_Display,
 } from "next/font/google";
-import Head from "next/head";
 export const metadata: Metadata = {
 	title: "Krishnanshu - Portfolio",
 	description:
@@ -61,7 +60,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<Head>
+			<head>
 				<title>Krishnanshu Khanna | Full Stack Developer</title>
 				<meta
 					name='description'
@@ -98,7 +97,7 @@ export default function RootLayout({
 							jobTitle: "Full Stack Developer",
 						}),
 					}}></script>
-			</Head>
+			</head>
 
 			<body
 				className={`${poppins.variable} ${nunitoSans.variable} ${montserrat.variable} ${bebasNeue.variable} ${oswald.variable} ${playfair.variable}`}>
