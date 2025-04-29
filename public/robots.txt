@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://krishnanshu.site
+
+# Sitemaps
+Sitemap: https://krishnanshu.site/sitemap.xml
