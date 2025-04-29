@@ -9,6 +9,7 @@ import {
 	Oswald,
 	Playfair_Display,
 } from "next/font/google";
+import Head from "next/head";
 export const metadata: Metadata = {
 	title: "Krishnanshu - Portfolio",
 	description:
@@ -60,7 +61,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<head>
+			<Head>
 				<title>Krishnanshu Khanna | Full Stack Developer</title>
 				<meta
 					name='description'
@@ -97,22 +98,22 @@ export default function RootLayout({
 							jobTitle: "Full Stack Developer",
 						}),
 					}}></script>
-
-				<Script
-					async
-					src='https://www.googletagmanager.com/gtag/js?id=G-5LMZFV6YTK'></Script>
-				<Script id='google-analytics'>
-					{`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5LMZFV6YTK');`}
-				</Script>
-			</head>
+			</Head>
 
 			<body
 				className={`${poppins.variable} ${nunitoSans.variable} ${montserrat.variable} ${bebasNeue.variable} ${oswald.variable} ${playfair.variable}`}>
+				<Script
+					strategy='afterInteractive'
+					src='https://www.googletagmanager.com/gtag/js?id=G-5LMZFV6YTK'
+				/>
+				<Script id='google-analytics' strategy='afterInteractive'>
+					{`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5LMZFV6YTK');
+    `}
+				</Script>
 				{children}
 			</body>
 		</html>
