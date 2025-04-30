@@ -96,7 +96,7 @@ export const ProfileCard = () => {
 				<HoverLabelIcon
 					icon={<FileText size={24} color='#FF6B00' />}
 					label='Resume'
-					href='https://drive.google.com/file/d/1xFGvttmHhaCJgnjfDqqv17runq8poL28/view?usp=drive_link'
+					href='/resume'
 				/>
 				<HoverLabelIcon
 					icon={<FaMediumM size={24} color='#FF6B00' />}
