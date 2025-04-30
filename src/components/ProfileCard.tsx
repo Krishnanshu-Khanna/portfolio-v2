@@ -1,7 +1,8 @@
 import { FileText, Flame, Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
-import HoverLabelIcon from "./HoverLabel";
 import { FaMediumM } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import HoverLabelIcon from "./HoverLabel";
 
 export const ProfileCard = () => {
 	return (
@@ -103,6 +104,11 @@ export const ProfileCard = () => {
 					label='Medium'
 					href='https://medium.com/@krishnanshu.khanna'
 				/>
+				<HoverLabelIcon
+					icon={<FaXTwitter size={24} color='#FF6B00' />}
+					label='X'
+					href="https://x.com/krishnanshu_21"
+					/>
 
 				{/* <a
 					href='https://www.linkedin.com/in/krishnanshu-khanna/'
