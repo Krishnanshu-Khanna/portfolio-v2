@@ -10,7 +10,7 @@ import {
 	Playfair_Display,
 } from "next/font/google";
 export const metadata: Metadata = {
-	title: "Krishnanshu - Portfolio",
+	title: "Krishnanshu Khanna | Portfolio",
 	description:
 		"This is the portfolio website of Krishnanshu showcasing projects and skills.",
 };
@@ -61,11 +61,6 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<head>
-				<title>Krishnanshu Khanna | Full Stack Developer</title>
-				<meta
-					name='description'
-					content='Official portfolio of Krishnanshu Khanna – Full Stack Developer skilled in React, Node.js, and MongoDB. View projects and contact information.'
-				/>
 				<meta
 					name='keywords'
 					content='Krishnanshu Khanna, Full Stack Developer, Portfolio, krishnanshu.site'
