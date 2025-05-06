@@ -76,6 +76,12 @@ export default function RootLayout({
 				/>
 				<meta property='og:url' content='https://krishnanshu.site' />
 				<meta property='og:type' content='website' />
+				<meta property='twitter' content='https://x.com/krishnanshu_21' />
+				<meta property="instagram" content="https://www.instagram.com/krishnanshu_khanna/"/>
+				<meta property="spotify" content="https://open.spotify.com/user/695shpum7tvo6xfvs2xeawb9y"/>
+				<meta property="linkedin" content="https://www.linkedin.com/in/krishnanshu-khanna/"/>
+				<meta property="github" content="https://github.com/Krishnanshu-Khanna"/>
+				<meta property="medium" content="https://medium.com/@krishnanshu.khanna"/>
 				<script
 					type='application/ld+json'
 					dangerouslySetInnerHTML={{
@@ -87,7 +93,10 @@ export default function RootLayout({
 							sameAs: [
 								"https://www.linkedin.com/in/krishnanshu-khanna/",
 								"https://github.com/Krishnanshu-Khanna",
-								"medium.com/@krishnanshu.khanna",
+								"https://medium.com/@krishnanshu.khanna",
+								"https://x.com/krishnanshu_21",
+								"https://www.instagram.com/krishnanshu_khanna/",
+								"https://open.spotify.com/user/695shpum7tvo6xfvs2xeawb9y"
 							],
 							jobTitle: "Full Stack Developer",
 						}),
