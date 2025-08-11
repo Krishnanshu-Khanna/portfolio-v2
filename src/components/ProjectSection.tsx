@@ -100,7 +100,7 @@ const ProjectsSection = () => {
 					]}
 				/>
 				<ProjectCard
-					title='MicroBlogX'
+					title='MicroXBlog'
 					className='project-item'
 					description='📝 Microservices-based blog platform with RabbitMQ, Redis caching, hybrid PostgreSQL + MongoDB architecture, and AWS deployment.'
 					imageUrl='/images/microxblog.png'
