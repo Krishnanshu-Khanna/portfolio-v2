@@ -104,7 +104,7 @@ const Contact = () => {
 		<>
 			<div
 				ref={ref}
-				className='container mx-auto px-4 py-20 md:flex md:items-center md:gap-8 font-[poppins] mb-20'>
+				className='container mx-auto  px-4 py-20 md:flex md:items-center md:gap-8 font-[poppins] mb-20'>
 				<div className='md:w-1/2 space-y-10 mb-10 md:mb-0 text-stone-400'>
 					<h1 className='animate-item text-6xl md:text-8xl font-bold text-stone-700'>
 						<span className='text-amber-50'>Let&apos;s work</span> together

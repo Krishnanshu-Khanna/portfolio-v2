@@ -7,6 +7,7 @@ interface ProjectCardProps {
 	imageUrl: string;
 	demoUrl: string;
 	className?: string;
+	technologies?: string[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -14,14 +15,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	description,
 	imageUrl,
 	demoUrl,
-	className
+	className,
+	technologies = [],
 }) => {
 	return (
-<div
-	className={`flex flex-col md:flex-row items-center gap-6 p-6 border border-gray-800 bg-black rounded-2xl shadow-xl transition-transform duration-300  ${
-		className || ""
-	}`}
->
+		<div
+			className={`flex flex-col md:flex-row items-center gap-6 p-6 border border-gray-800 bg-black rounded-2xl shadow-xl transition-transform duration-300  ${
+				className || ""
+			}`}>
 			{/* Image Section */}
 			<div className='w-full md:w-1/2 h-48 md:h-56 relative rounded-xl overflow-hidden'>
 				<Image
@@ -37,6 +38,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 			<div className='w-full md:w-1/2 flex flex-col justify-between'>
 				<h3 className='text-2xl font-bold text-stone-100 mb-2'>{title}</h3>
 				<p className='text-stone-400 text-sm mb-4'>{description}</p>
+
+				{/* Technology Tags */}
+				{technologies.length > 0 && (
+					<div className='mb-4'>
+						<div className='flex flex-wrap gap-2'>
+							{technologies.map((tech, index) => (
+								<span
+									key={index}
+									className='px-3 py-1 bg-stone-800/80 border border-stone-600 rounded-full text-xs text-stone-300 font-medium hover:bg-stone-700 transition-colors duration-200'>
+									{tech}
+								</span>
+							))}
+						</div>
+					</div>
+				)}
 
 				<div className='flex flex-col gap-3'>
 					<Link href={demoUrl} target='_blank' rel='noopener noreferrer'>

@@ -1,5 +1,7 @@
 import { useRef, useEffect } from "react";
 import { ProfileCard } from "./ProfileCard";
+import { Download } from "lucide-react";
+import Link from "next/link";
 import gsap from "gsap";
 
 export default function HomeSection() {
@@ -38,7 +40,7 @@ export default function HomeSection() {
 	return (
 		<section
 			ref={sectionRef}
-			className='flex flex-col font-[poppins] lg:flex-row items-center justify-center lg:justify-between px-10 md:px-24 py-20 space-y-12 md:space-y-0'>
+			className='flex flex-col font-[poppins] lg:flex-row items-center justify-center lg:justify-between px-10 md:px-24 py-20 mt-5 space-y-12 md:space-y-0'>
 			{/* Profile Card */}
 			<div className='overflow-y-hidden flex justify-center items-center profile-card'>
 				<ProfileCard />
@@ -78,6 +80,18 @@ export default function HomeSection() {
 							PROJECTS COMPLETED
 						</p>
 					</div>
+				</div>
+
+				{/* Download Resume Button */}
+				<div className='flex justify-center md:justify-start mt-5'>
+					<Link href='/Resume.pdf' target='_blank' rel='noopener noreferrer'>
+						<button className='group relative flex items-center gap-3 px-5 py-[10px] bg-amber-50/10 hover:bg-amber-50/20 border border-amber-50/30 hover:border-amber-50/50 rounded-lg transition-all duration-300 backdrop-blur-sm'>
+							<Download className='w-5 h-5 text-amber-50 group-hover:text-amber-100 transition-colors duration-300' />
+							<span className='text-amber-50 group-hover:text-amber-100 font-medium transition-colors duration-300'>
+								Download Resume
+							</span>
+						</button>
+					</Link>
 				</div>
 			</div>
 		</section>
