@@ -84,7 +84,7 @@ export default function HomeSection() {
 
 				{/* Download Resume Button */}
 				<div className='flex justify-center md:justify-start mt-5'>
-					<Link href='/Resume.pdf' target='_blank' rel='noopener noreferrer'>
+					<Link href='/resume' target='_blank' rel='noopener noreferrer'>
 						<button className='group relative flex items-center gap-3 px-5 py-[10px] bg-amber-50/10 hover:bg-amber-50/20 border border-amber-50/30 hover:border-amber-50/50 rounded-lg transition-all duration-300 backdrop-blur-sm'>
 							<Download className='w-5 h-5 text-amber-50 group-hover:text-amber-100 transition-colors duration-300' />
 							<span className='text-amber-50 group-hover:text-amber-100 font-medium transition-colors duration-300'>
