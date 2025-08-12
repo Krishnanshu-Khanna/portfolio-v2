@@ -34,7 +34,6 @@ const HoverLabelIcon = ({ icon, label, href }: HoverLabelIconProps) => {
 	return (
 		<Link
 			href={href}
-			target="_blank"
 			rel='noopener noreferrer'
 			className='flex flex-col items-center justify-center relative group text-white'
 			onMouseEnter={handleMouseEnter}
